@@ -1,13 +1,65 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        
+        <title>Strapping Good Coffee</title>
+    </head>
+    <body>
+        
+<!-- NAVBAR -->        
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="logoB">
+          <a class="navbar-brand ml-4 mt-2 mb-2 mr-4" href="#">Logo</a>
+            </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link mr-4" href="http://127.0.0.1:5500/TTS-4-06-2020/my_kitchen.html">PRODUCTS <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mr-4">
+                <a class="nav-link" href="https://www.spotify.com/us/premium/?utm_source=us-en_brand_contextual-desktop_text&utm_medium=paidsearch&utm_campaign=alwayson_ucanz_us_performancemarketing_core_brand+contextual-desktop+text+exact+us-en+google&gclid=Cj0KCQiA7NKBBhDBARIsAHbXCB6DH7-7d9h89QDcecU6jnSRH3G9Id4i02g0rIx0WiixslAcuEqBddoaAkcbEALw_wcB&gclsrc=aw.ds">MUSIC</a>
+              </li>
+                <li class="nav-item mr-4">
+                <a class="nav-link" href="https://www.netflix.com/">PLAY</a>
+              </li>
+                <li class="nav-item mr-4">
+                <a class="nav-link" href="http://127.0.0.1:5500/TTS-4-06-2020/resume.html">CONNECT</a>
+              </li>
+                <form class="form-inline my-2 my-lg-0">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">  
+            <div class="btnBack">
+              <img class="btn my-2 my-sm-2" src="assets/images/Search-icon.png" width="40">
+            </div>
+            </form>
+                <div class="right">
+              SIGN IN / DEALER LOCATOR
+                </div>
+                <div class="rightBottom">
+              VIEW CART <img class="btn cart" src="assets/images/shopping-cart-icon.svg" width="50">
+                </div>
+            </ul>
+          </div>
+        </nav>
+<img src="/images/ZippingOnMarzarita.jpg" alt="Franky Zippy on Marzaritas!!">
+        <div class="footer">
+          <p>Footer</p>
+        </div>
+        
+<!-- Bootstrap Javascript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    </body>
+</html>
