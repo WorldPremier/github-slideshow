@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Week Two Day Three!</h1>
+    <script src="index.js"></script>
+    <p>How much cup of coffee had you had?</p>
+    <p id="numcups">5</p>
+
+    <button id="cupsless" onclick="let cupnum = document.getElementById('numcups'); cupnum.innerHTML = parseFloat(cupnum.innerHTML)-1; calculate()">-</button>
+	<button id="cupsmore" onclick="let cupnum = document.getElementById('numcups'); cupnum.innerHTML = parseFloat(cupnum.innerHTML)+1; calculate()">+</button>
+    
+    <p>Do you need more coffee?</p>
+    <p id="cupanswer">Waiting for an answer...</p>
+
+    <p>How many miles since your last oil change?</p>
+	<p id="nummiles">500</p>
+	<button id="milesless" onclick="let milenum = document.getElementById('nummiles'); milenum.innerHTML = parseFloat(milenum.innerHTML)-1; calculate()">-</button>
+	<button id="milesmore" onclick="let milenum = document.getElementById('nummiles'); milenum.innerHTML = parseFloat(milenum.innerHTML)+1; calculate()">+</button>
+
+	<p>Do you need an oil change?</p>
+	<p id="oilanswer">Waiting for an answer...</p>
+
+
+    <script>calculate()</script>
+</body>
+</html>
